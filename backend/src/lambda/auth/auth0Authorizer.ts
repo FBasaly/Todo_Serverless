@@ -9,7 +9,7 @@ import { JwtPayload } from '../../auth/JwtPayload'
 const logger = createLogger('auth')
 
 // TODO: Provide a URL that can be used to download a certificate that can be used
-const jwksUrl = 'https://dev-16t885oy.auth0.com/pem'
+const jwksUrl = 'https://dev-16t885oy.auth0.com/.well-known/jwks.json'
 
 export const handler = async (
   event: CustomAuthorizerEvent
